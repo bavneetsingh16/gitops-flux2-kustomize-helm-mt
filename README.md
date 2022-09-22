@@ -15,7 +15,7 @@ helm delete -n <namespace> <helm-chart-name>
 flux reconcile helmrelease -n <helmrelease-namespace> <helmrelease-name>
 ```
 
-Optionally, you may also re-create the fluxConfiguration to re-deploy all of the deployed manifests from start.
+Optionally, you may also re-create the fluxConfiguration to redeploy all of the deployed manifests from start.
 
 ```bash
 az k8s-configuration flux delete -g flux-demo-rg -c flux-demo-arc -n cluster-config --namespace cluster-config -t connectedClusters
