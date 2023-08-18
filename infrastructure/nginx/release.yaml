@@ -23,3 +23,8 @@ spec:
       type: NodePort
     ingressClassResource:
       name: nginx2
+      annotations:
+        meta.helm.sh/release-name: nginx2-ingress-controller
+        meta.helm.sh/release-namespace: nginx2
+      labels:
+        app.kubernetes.io/managed-by: Helm
