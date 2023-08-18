@@ -5,7 +5,7 @@ metadata:
   namespace: cluster-config
 spec:
   targetNamespace: nginx2
-  releaseName: nginx2-ingress-controller
+  releaseName: nginx2
   chart:
     spec:
       chart: nginx-ingress-controller
@@ -24,7 +24,7 @@ spec:
     ingressClassResource:
       name: nginx2
       annotations:
-        meta.helm.sh/release-name: nginx2-ingress-controller
+        meta.helm.sh/release-name: nginx2
         meta.helm.sh/release-namespace: nginx2
       labels:
         app.kubernetes.io/managed-by: Helm
