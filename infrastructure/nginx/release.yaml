@@ -1,10 +1,10 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: nginx
+  name: nginx2
   namespace: cluster-config
 spec:
-  targetNamespace: nginx
+  targetNamespace: nginx2
   releaseName: nginx-ingress-controller
   chart:
     spec:
@@ -18,10 +18,8 @@ spec:
   install:
     remediation:
       retries: 3
-  # Default values
-  # https://github.com/bitnami/charts/blob/master/bitnami/nginx-ingress-controller/values.yaml
   values:
     service:
       type: NodePort
     ingressClassResource:
-      name: nginx
+      name: nginx2
