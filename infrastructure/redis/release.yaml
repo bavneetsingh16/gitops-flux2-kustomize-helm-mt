@@ -11,7 +11,7 @@ spec:
       chart: redis
       sourceRef:
         kind: HelmRepository
-        name: bitnami2
+        name: bitnami
         namespace: cluster-config
       version: "17.x"
   interval: 1h0m0s
@@ -20,4 +20,4 @@ spec:
       retries: 3
   valuesFrom:
     - kind: ConfigMap
-      name: redis-values
+      name: error-prone
