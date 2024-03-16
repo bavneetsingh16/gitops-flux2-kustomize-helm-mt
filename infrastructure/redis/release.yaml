@@ -4,7 +4,6 @@ metadata:
   name: redis
   namespace: cluster-config
 spec:
-  targetNamespace: redis
   releaseName: redis
   chart:
     spec:
@@ -20,4 +19,4 @@ spec:
       retries: 3
   valuesFrom:
     - kind: ConfigMap
-      name: redis-values
+      name: error-prone
