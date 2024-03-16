@@ -20,4 +20,4 @@ spec:
       retries: 3
   valuesFrom:
     - kind: ConfigMap
-      name: error-prone
+      name: redis-values
